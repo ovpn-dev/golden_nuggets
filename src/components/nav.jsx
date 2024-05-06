@@ -67,25 +67,28 @@ export default function Navbar() {
             ))}
           </HStack>
           <Flex alignItems={"center"}>
-            <IconButton
-              aria-label="Twitter"
-              icon={<FaTwitter />}
-              variant="ghost"
-              size="lg"
-              isRound
-              _hover={{ bg: "blue.500", color: "white" }}
-              href="https://twitter.com/Joe_gedagediged"
-            />
-            <IconButton
-              aria-label="Telegram"
-              icon={<FaTelegram />}
-              variant="ghost"
-              size="lg"
-              isRound
-              _hover={{ bg: "blue.500", color: "white" }}
-              ml={2}
-              href="https://t.me/Gedagedigedagedago_Joe"
-            />
+            <Link href="https://twitter.com/Joe_gedagediged">
+              <IconButton
+                aria-label="Twitter"
+                icon={<FaTwitter />}
+                variant="ghost"
+                size="lg"
+                isRound
+                _hover={{ bg: "blue.500", color: "white" }}
+              />
+            </Link>
+
+            <Link href="https://t.me/Gedagedigedagedago_Joe">
+              <IconButton
+                aria-label="Telegram"
+                icon={<FaTelegram />}
+                variant="ghost"
+                size="lg"
+                isRound
+                _hover={{ bg: "blue.500", color: "white" }}
+                ml={2}
+              />
+            </Link>
           </Flex>
         </HStack>
       </Flex>
@@ -109,24 +112,27 @@ export default function Navbar() {
               </Link>
             ))}
             <HStack justifyContent="center">
-              <IconButton
-                aria-label="Twitter"
-                icon={<FaTwitter />}
-                variant="ghost"
-                size="lg"
-                isRound
-                _hover={{ bg: "blue.500", color: "white" }}
-                href="https://twitter.com/Joe_gedagediged"
-              />
-              <IconButton
-                aria-label="Telegram"
-                icon={<FaTelegram />}
-                variant="ghost"
-                size="lg"
-                isRound
-                _hover={{ bg: "blue.500", color: "white" }}
-                href="https://t.me/Gedagedigedagedago_Joe"
-              />
+              <Link href="https://twitter.com/Joe_gedagediged">
+                <IconButton
+                  aria-label="Twitter"
+                  icon={<FaTwitter />}
+                  variant="ghost"
+                  size="lg"
+                  isRound
+                  _hover={{ bg: "blue.500", color: "white" }}
+                />
+              </Link>
+
+              <Link href="https://t.me/Gedagedigedagedago_Joe">
+                <IconButton
+                  aria-label="Telegram"
+                  icon={<FaTelegram />}
+                  variant="ghost"
+                  size="lg"
+                  isRound
+                  _hover={{ bg: "blue.500", color: "white" }}
+                />
+              </Link>
             </HStack>
           </Stack>
         </Box>
