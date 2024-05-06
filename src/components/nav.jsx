@@ -13,9 +13,11 @@ import {
   useColorModeValue,
   Stack,
   Link,
+  Image,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { FaTwitter, FaTelegram } from "react-icons/fa";
+import logo from "../assets/IMG_20240506_094602_579.png";
 
 const Links = [
   { name: "Home", path: "#" },
@@ -41,7 +43,10 @@ export default function Navbar() {
           onClick={isOpen ? onClose : onOpen}
         />
         <Flex alignItems={"center"}>
-          <Box>Logo</Box>
+          <Flex align="center" color={"#FFDF00"}>
+            <Image src={logo} h="40px" w="40px" alt="Image description" />
+            Golden $Nuggets
+          </Flex>
         </Flex>
         <HStack spacing={8} alignItems={"center"}>
           <HStack

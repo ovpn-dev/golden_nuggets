@@ -31,12 +31,18 @@ export default function HeroSection() {
       >
         <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
           <Text
-            color={"white"}
+            color={"#FFDF00"}
             fontWeight={700}
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
           >
             Golden $Nuggets
+          </Text>
+          <Text color={"White"} fontWeight={700}>
+            Get ready to embark on a journey to the moon with our groundbreaking
+            meme coin. Right now we are offering early access to our Presale! Be
+            one of the first to secure an early buy-in positionof this wonderful
+            movment!
           </Text>
           <Stack direction={"row"}>
             <Button
@@ -45,7 +51,7 @@ export default function HeroSection() {
               color={"white"}
               _hover={{ bg: "blue.500" }}
             >
-              Show me more
+              Join Pre-Sale
             </Button>
             <Button
               bg={"whiteAlpha.300"}
