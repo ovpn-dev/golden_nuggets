@@ -74,6 +74,7 @@ export default function Navbar() {
               size="lg"
               isRound
               _hover={{ bg: "blue.500", color: "white" }}
+              href="https://twitter.com/Joe_gedagediged"
             />
             <IconButton
               aria-label="Telegram"
@@ -83,6 +84,7 @@ export default function Navbar() {
               isRound
               _hover={{ bg: "blue.500", color: "white" }}
               ml={2}
+              href="https://t.me/Gedagedigedagedago_Joe"
             />
           </Flex>
         </HStack>
@@ -114,6 +116,7 @@ export default function Navbar() {
                 size="lg"
                 isRound
                 _hover={{ bg: "blue.500", color: "white" }}
+                href="https://twitter.com/Joe_gedagediged"
               />
               <IconButton
                 aria-label="Telegram"
@@ -122,6 +125,7 @@ export default function Navbar() {
                 size="lg"
                 isRound
                 _hover={{ bg: "blue.500", color: "white" }}
+                href="https://t.me/Gedagedigedagedago_Joe"
               />
             </HStack>
           </Stack>
