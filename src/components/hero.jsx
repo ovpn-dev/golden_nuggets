@@ -5,6 +5,8 @@ import {
   Text,
   VStack,
   useBreakpointValue,
+  Link,
+  Heading,
 } from "@chakra-ui/react";
 import videoSource from "../assets/5_6181725431037693461.MOV";
 
@@ -30,14 +32,7 @@ export default function HeroSection() {
         bgGradient={"linear(to-r, blackAlpha.600, transparent)"}
       >
         <Stack maxW={"2xl"} align={"flex-start"} spacing={6}>
-          <Text
-            color={"#FFDF00"}
-            fontWeight={700}
-            lineHeight={1.2}
-            fontSize={useBreakpointValue({ base: "3xl", md: "4xl" })}
-          >
-            Golden $Nuggets
-          </Text>
+          <Heading color={"#FFD700"}>Golden $NUGGETS</Heading>
           <Text color={"White"} fontWeight={700}>
             Get ready to embark on a journey to the moon with our groundbreaking
             meme coin. Right now we are offering early access to our Presale! Be
@@ -51,7 +46,7 @@ export default function HeroSection() {
               color={"white"}
               _hover={{ bg: "blue.500" }}
             >
-              Join Pre-Sale
+              <Link href="https://twitter.com/Joe_gedagediged"> Twitter</Link>
             </Button>
             <Button
               bg={"whiteAlpha.300"}
@@ -59,7 +54,7 @@ export default function HeroSection() {
               color={"white"}
               _hover={{ bg: "whiteAlpha.500" }}
             >
-              Show me more
+              <Link href="https://t.me/Gedagedigedagedago_Joe"> Telegram</Link>
             </Button>
           </Stack>
         </Stack>
