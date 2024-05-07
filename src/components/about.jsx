@@ -12,7 +12,7 @@ import {
   Box,
   Link,
 } from "@chakra-ui/react";
-import nugget from "../assets/main_nuggets.png";
+import nugget from "../assets/mainNuggets.png";
 import base from "../assets/base.png";
 
 const ProductIntro = () => {
