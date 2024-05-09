@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Box } from "@chakra-ui/react";
 import wp from "./assets/public.avif";
 import NuggetsCard from "./components/nuggetsCard";
-// import ProductIntro from "./components/about";
+import ProductIntro from "./components/about";
 // import Milestones from "./components/buy";
 import NewHero from "./components/nwHero";
 import MyNav from "./components/nav";
@@ -28,7 +28,7 @@ function App() {
         <MyNav />
         <NewHero />
         <NuggetsCard />
-        {/* <ProductIntro /> */}
+        <ProductIntro />
         <Tokenomics />
         <Utilities />
         <Contact />

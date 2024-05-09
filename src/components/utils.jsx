@@ -16,9 +16,8 @@ const Utilities = () => {
         <Heading
           fontSize={{ base: "4xl", lg: "6xl" }}
           lineHeight={{ base: "2rem", lg: "5rem" }}
-          bgGradient="linear(to-r, yellow.400, orange.300)"
           bgClip="text"
-          textColor="transparent"
+          textColor="white"
           pointerEvents="none"
           p={4}
           textAlign="center"
