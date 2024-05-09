@@ -2,15 +2,16 @@ import { Box, Text, Flex } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <Box bg="gray.800" position="relative" py={12}>
+    <Box position="relative" py={5}>
       <Box maxW="screen-xl" mx="auto" flexDir="column" gap={4}>
-        <Flex alignItems="center" justifyContent="center" py={12}>
+        <Flex alignItems="center" justifyContent="center" py={5}>
           <Text
-            fontSize="9xl"
+            fontSize="8xl"
+            fontWeight={600}
             textAlign="center"
             color="white"
             w="max-content"
-            textColor="transparent"
+            // textColor="transparent"
             pointerEvents="none"
             textShadow="-2px 2px 0 #000, 2px 2px 0 #000, 2px -2px 0 #000, -2px -2px 0 #000"
           >
@@ -18,7 +19,9 @@ const Footer = () => {
           </Text>
         </Flex>
         <Flex justifyContent="center" w="full" py={4}>
-          <Text color="white">Copyright © 2024. All rights reserved.</Text>
+          <Text color="white" fontWeight={700}>
+            Copyright © 2024. All rights reserved.
+          </Text>
         </Flex>
       </Box>
     </Box>

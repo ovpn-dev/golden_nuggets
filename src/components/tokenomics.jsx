@@ -1,23 +1,37 @@
-import { Box, Flex, Heading, Text, Link, Image, Stack } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Text,
+  Link,
+  Image,
+  Stack,
+  Button,
+} from "@chakra-ui/react";
 
 const Tokenomics = () => {
   return (
-    <Box id="tokenomics" bg="lyllw.400" py={5} zIndex={10} position="relative">
-      <Box maxW={"auto"} mx="auto" px={4}>
+    <Box id="tokenomics" py={10} zIndex={10} position="relative">
+      <Box maxW={"7xl"} mx="auto" px={5}>
         <Stack
+          bg="#0244a5b3"
           bgGradient="linear(to-t, yllw.500, lyllw.500)"
+          border="1px"
+          borderColor="#0244a5b3.700"
           backdropFilter="blur(10px)"
           gap={8}
-          alignItems="center"
-          justifyContent="center"
-          w="full"
+          w="auto"
           p={10}
           rounded="2xl"
-          border="1px"
-          borderColor="lyllw.700"
           opacity={1}
+          alignItems="center"
+          justifyContent="center"
         >
-          <Flex direction={{ base: "column", md: "row" }}>
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            alignItems="center"
+            justifyContent="center"
+          >
             <Box>
               <Flex alignItems="center" justifyContent="center" opacity={1}>
                 <Image
@@ -26,24 +40,29 @@ const Tokenomics = () => {
                 />
               </Flex>
             </Box>
-            <Stack alignItems="center" gap={4} textAlign="center">
+            <Stack
+              alignItems="center"
+              gap={4}
+              textAlign="center"
+              textColor={"White"}
+            >
               <Heading
                 as="h1"
-                fontSize={{ base: "6xl", md: "8xl" }}
+                fontSize={{ base: "4xl", md: "6xl" }}
                 textAlign="center"
                 textShadow="-1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000"
                 opacity={1}
               >
                 TOKENOMICS
               </Heading>
-              <Box textAlign="center">
-                <Text fontSize={{ base: "5xl", md: "7xl" }} mt={5} opacity={1}>
+              <Box textAlign="center" fontWeight={700}>
+                <Text fontSize={{ base: "2xl", md: "4xl" }} mt={5} opacity={1}>
                   85% LP
                 </Text>
-                <Text fontSize={{ base: "5xl", md: "7xl" }} mt={5} opacity={1}>
+                <Text fontSize={{ base: "2xl", md: "4xl" }} mt={5} opacity={1}>
                   10% TREASURY
                 </Text>
-                <Text fontSize={{ base: "5xl", md: "7xl" }} mt={5} opacity={1}>
+                <Text fontSize={{ base: "2xl", md: "4xl" }} mt={5} opacity={1}>
                   5% CEX WALLET
                 </Text>
               </Box>
@@ -57,8 +76,6 @@ const Tokenomics = () => {
             mt={5}
           >
             <Link
-              w="full"
-              bg="lyllw.700"
               rounded="3xl"
               dropShadow="lg"
               transition="all 0.3s ease-in-out"
@@ -66,10 +83,11 @@ const Tokenomics = () => {
               href="https://basescan.org/tx/0x748e6b909db8798aab851294c416e058f5b9fccc2367a7ec608bfda50c39432b"
               isExternal
             >
-              <Heading>CONTRACT RENOUNCED</Heading>
+              <Button w="full" bg="blue.700" color={"white"}>
+                CONTRACT RENOUNCED
+              </Button>
             </Link>
             <Link
-              w="full"
               bg="lyllw.700"
               rounded="3xl"
               dropShadow="lg"
@@ -78,7 +96,9 @@ const Tokenomics = () => {
               href="https://basescan.org/tx/0x7b59c9fc5476bfc5d5cdd467926a928ad6b18cb0092b9fa096332d9f441337c3"
               isExternal
             >
-              <Heading>LP LOCKED 365 DAYS</Heading>
+              <Button w="full" bg="blue.700" color={"white"}>
+                LP LOCKED 365 DAYS
+              </Button>
             </Link>
           </Flex>
         </Stack>

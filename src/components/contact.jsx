@@ -18,7 +18,6 @@ const Contact = () => {
             lineHeight={{ base: "2rem", lg: "5rem" }}
             color="white"
             w="max-content"
-            textColor="transparent"
             pointerEvents="none"
             whiteSpace="nowrap"
             textShadow="-1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000"
@@ -55,7 +54,7 @@ const Contact = () => {
           >
             <Link href="mailto:contact@basedbrett.com" isExternal>
               <Text
-                as="p"
+                textColor={"White"}
                 fontWeight="semibold"
                 underline
                 _hover={{ color: "gray.400" }}

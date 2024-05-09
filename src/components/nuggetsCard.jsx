@@ -41,14 +41,21 @@ export default function NuggetsCard() {
   return (
     <>
       <Stack // backgroundImage={`url(${ScSh130})`}
-        p={10}
-        bgSize="cover"
-        bgPos="center"
-        width="auto"
+        p={{ base: 5, md: 20 }}
+        bg="#0244a5b3"
+        m={{ base: "none", md: 20 }}
+        width={"auto"}
         height="auto"
         align={"center"}
+        justifyContent="center"
+        border="1px"
+        borderColor="#0244a5b3.700"
+        rounded={"lg"}
+        color={"white"}
       >
-        <Heading>BUY IT ON</Heading>
+        <Heading as="h1" fontSize={{ base: "4xl", md: "6xl" }}>
+          BUY IT ON
+        </Heading>
         <Grid
           templateColumns={{
             base: "repeat(2, 1fr)",
@@ -163,7 +170,9 @@ export default function NuggetsCard() {
         </Grid>
         <Divider />
         <Stack p={10}>
-          <Heading size={"2xl"}>FUTURES TRADING</Heading>
+          <Heading size={"lg"} textAlign="center">
+            FUTURES TRADING
+          </Heading>
 
           <Grid
             templateColumns={{

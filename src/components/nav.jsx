@@ -64,6 +64,7 @@ export default function Navbar() {
             spacing={4}
             display={{ base: "none", md: "flex" }}
             align={"start"}
+            color="White"
           >
             {Links.map((link) => (
               <Link
@@ -73,7 +74,7 @@ export default function Navbar() {
                 rounded={"md"}
                 _hover={{
                   textDecoration: "none",
-                  bg: useColorModeValue("gray.200", "gray.700"),
+                  bg: "#0244a5b3",
                 }}
                 href={link.path}
               >

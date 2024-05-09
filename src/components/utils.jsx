@@ -2,7 +2,7 @@ import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 const Utilities = () => {
   return (
-    <Box bg="gray.800" py={24} position="relative" color="white">
+    <Box py={24} position="relative" color="white">
       <Box
         maxW="4xl"
         mx="auto"
@@ -18,10 +18,10 @@ const Utilities = () => {
           lineHeight={{ base: "2rem", lg: "5rem" }}
           bgGradient="linear(to-r, yellow.400, orange.300)"
           bgClip="text"
-          w="max-content"
           textColor="transparent"
           pointerEvents="none"
           p={4}
+          textAlign="center"
         >
           UTILITIES
         </Heading>

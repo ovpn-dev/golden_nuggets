@@ -20,9 +20,10 @@ function App() {
         backgroundSize="cover"
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
-        minHeight="100vh"
-        width="auto"
-        height="auto"
+        alignContent={"center"}
+        justifyContent={"center"}
+        width="full"
+        height="full"
       >
         <MyNav />
         <NewHero />

@@ -10,6 +10,7 @@ import {
   Image,
   Skeleton,
   Box,
+  useColorModeValue,
   Link,
 } from "@chakra-ui/react";
 import nugget from "../assets/mainNuggets.png";
