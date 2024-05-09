@@ -11,103 +11,202 @@ import {
   Stack,
   Text,
   useBreakpointValue,
+  Divider,
+  Flex,
+  Grid,
+  GridItem,
+  Link,
 } from "@chakra-ui/react";
-import CrdImg1 from "../assets/cardImage1.jpg";
-import CrdImg2 from "../assets/cardImage2.jpg";
-import CrdImg3 from "../assets/cardImage3.jpg";
-import CrdImg4 from "../assets/cardImage4.jpg";
-import CrdImg5 from "../assets/cardImage5.jpg";
-import CrdImg6 from "../assets/cardImage6.jpg";
-import CrdImg7 from "../assets/cardImage7.jpg";
-import ScSh130 from "../assets/scrnsht130.jpg";
-import ScSh135 from "../assets/scrnsht135.jpg";
-import ScSh137 from "../assets/scrnsht137.jpg";
+import Bybit from "../assets/Bybit.png";
+import phemex from "../assets/phemex.png";
+import gate from "../assets/gate.png";
+import okx from "../assets/okx.png";
+import bingx from "../assets/bing.png";
+import bitget from "../assets/bitg.png";
+import bitmart from "../assets/bitm.png";
+import xt from "../assets/xt.png";
+import Bitunix from "../assets/bitu.png";
+import Digifinex from "../assets/Digifin.png";
+import Asc from "../assets/asc.png";
+import Coinex from "../assets/coine.png";
+import poloniex from "../assets/plnx.png";
+import Bt from "../assets/bt.png";
+import Hg from "../assets/hg.png";
+import Bitkan from "../assets/btkan.png";
+import Lbank from "../assets/lbank.png";
+import BybitFut from "../assets/bybitFutures.png";
+import MexcFut from "../assets/mexcFutures.png";
 
 export default function NuggetsCard() {
   return (
     <>
-      <Stack
-        p={5}
-        backgroundImage={`url(${ScSh130})`}
-        bgSize="cover" // Covers the entire box area
-        bgPos="center" // Centers the image within the box
+      <Stack // backgroundImage={`url(${ScSh130})`}
+        p={10}
+        bgSize="cover"
+        bgPos="center"
         width="auto"
         height="auto"
         align={"center"}
       >
-        {" "}
-        {/* <Heading textAlign="center" fontWeight={700} size="2xl">
-          ABOUT US
-        </Heading> */}
-        {/* <Text
-          px={5}
-          fontSize={"lg"}
-          color="#fff"
-          py={1}
-          fontWeight={500}
-          lineHeight={1.5}
+        <Heading>BUY IT ON</Heading>
+        <Grid
+          templateColumns={{
+            base: "repeat(2, 1fr)",
+            md: "repeat(3, 1fr)",
+            lg: "repeat(5, 1fr)",
+          }}
+          gap={{ base: 2, md: 4 }}
+          maxW="9xl"
+          mx="auto"
+          p={10}
         >
-          At Golden $Nuggets. We believe in the Power of Community.
-          <br />
-          That's why every transaction contributes towards impactful
-          <br />
-          projects, charities and initiatives chosen by you!
-          <br />
-          Together we can make a real difference while having fun in the crypto
-          world.
-        </Text> */}
-        <SimpleGrid
-          spacing={4}
-          columns={{ base: 1, sm: 2, md: 2, lg: 3 }}
-          alignContent={"center"}
-          p={5}
-        >
-          <Card size={"lg"} bg="Black.100">
-            <CardBody>
-              <Image src={CrdImg1} alt="Image description" />
-            </CardBody>
-          </Card>
-          <Card size={"lg"} bg="Black.100">
-            <CardBody>
-              <Image src={CrdImg2} alt="Image description" />
-            </CardBody>
-          </Card>
-          <Card size={"lg"} bg="Black.100">
-            <CardBody>
-              <Image src={CrdImg3} alt="Image description" />
-            </CardBody>
-          </Card>
-          <Card size={"lg"} bg="Black.100">
-            <CardBody>
-              <Image src={CrdImg4} alt="Image description" />
-            </CardBody>
-          </Card>
-          <Card size={"lg"} bg="Black.100">
-            <CardBody>
-              <Image src={CrdImg5} alt="Image description" />
-            </CardBody>
-          </Card>
-          <Card size={"lg"} bg="Black.100">
-            <CardBody>
-              <Image src={CrdImg6} alt="Image description" />
-            </CardBody>
-          </Card>
-          <Card size={"lg"} bg="Black.100">
-            <CardBody>
-              <Image src={CrdImg7} alt="Image description" />
-            </CardBody>
-          </Card>
-          <Card size={"lg"} bg="Black.100">
-            <CardBody>
-              <Image src={ScSh137} alt="Image description" />
-            </CardBody>
-          </Card>
-          <Card size={"lg"} bg="Black.100">
-            <CardBody>
-              <Image src={ScSh135} alt="Image description" />
-            </CardBody>
-          </Card>
-        </SimpleGrid>
+          {[
+            {
+              href: "https://www.bybit.com/en/trade/spot-m/BRETT/USDT",
+              src: Bybit,
+              alt: "ByBit",
+            },
+            {
+              href: "https://phemex.com/trade/BRETTUSDT",
+              src: phemex,
+              alt: "Phemex",
+            },
+            {
+              href: "https://www.gate.io/en/trade/BRETT_USDT",
+              src: gate,
+              alt: "Gate.io",
+            },
+            {
+              href: "https://www.okx.com/trade-spot/markets",
+              src: okx,
+              alt: "OKX",
+            },
+            {
+              href: "https://www.binance.com/en/trade/BRETT_USDT",
+              src: bingx,
+              alt: "Binance",
+            },
+            {
+              href: "https://www.bitget.com/trade/BRETT_USDT",
+              src: bitget,
+              alt: "Bitget",
+            },
+            {
+              href: "https://www.bitmart.com/spot/en-us/BRETT_USDT",
+              src: bitmart,
+              alt: "Bitmart",
+            },
+            {
+              href: "https://xt.com/trade",
+              src: xt,
+              alt: "XT",
+            },
+            {
+              href: "https://www.bitunix.com/en-US/BRETT_USDT",
+              src: Bitunix,
+              alt: "Bitunix",
+            },
+            {
+              href: "https://www.digifinex.com/en-ww/trade/USDT/BRETT",
+              src: Digifinex,
+              alt: "Digifinex",
+            },
+            {
+              href: "https://ascendex.com/en/global-digital-asset-platform/futures-trade/BRETT_USDT",
+              src: Asc,
+              alt: "AscendEX",
+            },
+            {
+              href: "https://www.coinex.com/exchange",
+              src: Coinex,
+              alt: "Coinex",
+            },
+            {
+              href: "https://www.poloniex.com/trade/BRETT_USDT",
+              src: poloniex,
+              alt: "Poloniex",
+            },
+            {
+              href: "https://www.bt.com/brettposts/BRETT_USDT",
+              src: Bt,
+              alt: "BT",
+            },
+            {
+              href: "https://hg.com/trade/BRETT_USDT",
+              src: Hg,
+              alt: "HG",
+            },
+            {
+              href: "https://www.bitkan.com/brettposts/BRETT_USDT",
+              src: Bitkan,
+              alt: "Bitkan",
+            },
+            {
+              href: "https://www.lbank.com/spot/trade/BRETT_USDT",
+              src: Lbank,
+              alt: "LBank",
+            },
+          ].map((item, index) => (
+            <GridItem key={index}>
+              <Link href={item.href} isExternal>
+                <Image
+                  src={item.src}
+                  alt={item.alt}
+                  w="full"
+                  mx="auto"
+                  transition="all 0.3s ease-in-out"
+                  _hover={{ transform: "scale(1.1)" }}
+                />
+              </Link>
+            </GridItem>
+          ))}
+        </Grid>
+        <Divider />
+        <Stack p={10}>
+          <Heading size={"2xl"}>FUTURES TRADING</Heading>
+
+          <Grid
+            templateColumns={{
+              base: "repeat(2, 1fr)",
+              md: "repeat(2, 1fr)",
+              lg: "repeat(2, 1fr)",
+            }}
+            gap={{ base: 2, md: 4 }}
+            maxW="6xl"
+            mx="auto"
+          >
+            <GridItem>
+              <Link
+                href="https://www.bybit.com/trade/usdt/BRETTUSDT"
+                isExternal
+              >
+                <Image
+                  src={BybitFut}
+                  alt="ByBit"
+                  w="full"
+                  mx="auto"
+                  transition="all 0.3s ease-in-out"
+                  _hover={{ transform: "scale(1.1)" }}
+                />
+              </Link>
+            </GridItem>
+            <GridItem>
+              <Link
+                href="https://futures.mexc.com/exchange/BRETT_USDT"
+                isExternal
+              >
+                <Image
+                  src={MexcFut}
+                  alt="MEXC"
+                  w="full"
+                  mx="auto"
+                  transition="all 0.3s ease-in-out"
+                  _hover={{ transform: "scale(1.1)" }}
+                />
+              </Link>
+            </GridItem>
+          </Grid>
+        </Stack>
       </Stack>
     </>
   );

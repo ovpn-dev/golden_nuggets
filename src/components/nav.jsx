@@ -14,16 +14,17 @@ import {
   Stack,
   Link,
   Image,
+  Text,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { FaTwitter, FaTelegram } from "react-icons/fa";
-import logo from "../assets/IMG_20240506_094602_579.png";
 
 const Links = [
-  { name: "Home", path: "#" },
-  { name: "About", path: "#" },
-  { name: "How to Buy", path: "#" },
-  { name: "Contact", path: "#" },
+  { name: "ABOUT", path: "#" },
+  { name: "TOKENOMICS", path: "#" },
+  { name: "CONTACT", path: "#" },
+  { name: "TELEGRAM", path: "https://t.me/Gedagedigedagedago_Joe" },
+  { name: "TWITTER", path: "https://twitter.com/Joe_gedagediged" },
 ];
 
 export default function Navbar() {
@@ -33,7 +34,7 @@ export default function Navbar() {
   const handleToggle = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
+    <Box bg={useColorModeValue("#fffff", "gray.900")} px={4}>
       <Flex h={16} alignItems={"center"} justifyContent={"space-around"}>
         <IconButton
           size={"md"}
@@ -43,10 +44,19 @@ export default function Navbar() {
           onClick={isOpen ? onClose : onOpen}
         />
         <Flex alignItems={"center"}>
-          <Flex align="center" color={"#FFDF00"}>
-            <Image src={logo} h="40px" w="40px" alt="Image description" />
-            Golden $Nuggets
-          </Flex>
+          <Text
+            textAlign="center"
+            fontSize="4xl"
+            color="white"
+            fontWeight="bold"
+            textStroke="sm"
+            pointerEvents="none"
+            userSelect="none"
+            className="text-primary"
+          >
+            {" "}
+            BRETT
+          </Text>
         </Flex>
         <HStack spacing={8} alignItems={"center"}>
           <HStack
@@ -72,7 +82,8 @@ export default function Navbar() {
             ))}
           </HStack>
           <Flex alignItems={"center"}>
-            <Link href="https://twitter.com/Joe_gedagediged">
+            <Button>Buy on Kyberswap</Button>
+            {/* <Link href="">
               <IconButton
                 aria-label="Twitter"
                 icon={<FaTwitter />}
@@ -83,7 +94,7 @@ export default function Navbar() {
               />
             </Link>
 
-            <Link href="https://t.me/Gedagedigedagedago_Joe">
+            <Link href="">
               <IconButton
                 aria-label="Telegram"
                 icon={<FaTelegram />}
@@ -93,7 +104,7 @@ export default function Navbar() {
                 _hover={{ bg: "blue.500", color: "white" }}
                 ml={2}
               />
-            </Link>
+            </Link> */}
           </Flex>
         </HStack>
       </Flex>
