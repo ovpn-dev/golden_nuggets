@@ -26,7 +26,7 @@ const Utilities = () => {
         </Heading>
         <Flex flexDir="column" gap={8} w="full">
           <Flex
-            bgGradient="linear(to-t, yellow.500, orange.400)"
+            bgGradient="linear(to-b, #0244a5b3, blue.400)"
             flexDir={{ base: "column", lg: "row" }}
             gap={8}
             alignItems="center"
@@ -55,7 +55,7 @@ const Utilities = () => {
             </Flex>
           </Flex>
           <Flex
-            bgGradient="linear(to-t, yellow.500, orange.400)"
+            bgGradient="linear(to-b, #0244a5b3, blue.400)"
             flexDir={{ base: "column", lg: "row" }}
             gap={8}
             alignItems="center"
@@ -88,7 +88,7 @@ const Utilities = () => {
             </Flex>
           </Flex>
           <Flex
-            bgGradient="linear(to-t, yellow.500, orange.400)"
+            bgGradient="linear(to-b, #0244a5b3, blue.400)"
             flexDir={{ base: "column", lg: "row" }}
             gap={8}
             alignItems="center"

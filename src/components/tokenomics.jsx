@@ -76,27 +76,38 @@ const Tokenomics = () => {
             mt={5}
           >
             <Link
-              rounded="3xl"
               dropShadow="lg"
               transition="all 0.3s ease-in-out"
-              _hover={{ transform: "scale(1.1)", bg: "lyllw.900" }}
+              _hover={{ transform: "scale(1.1)" }}
               href="https://basescan.org/tx/0x748e6b909db8798aab851294c416e058f5b9fccc2367a7ec608bfda50c39432b"
               isExternal
             >
-              <Button w="full" bg="blue.700" color={"white"}>
+              <Button
+                rounded="full"
+                w="full"
+                size={"lg"}
+                p={5}
+                bg="#0244a5b3"
+                color={"white"}
+              >
                 CONTRACT RENOUNCED
               </Button>
             </Link>
             <Link
-              bg="lyllw.700"
-              rounded="3xl"
               dropShadow="lg"
               transition="all 0.3s ease-in-out"
-              _hover={{ transform: "scale(1.1)", bg: "lyllw.900" }}
+              _hover={{ transform: "scale(1.1)" }}
               href="https://basescan.org/tx/0x7b59c9fc5476bfc5d5cdd467926a928ad6b18cb0092b9fa096332d9f441337c3"
               isExternal
             >
-              <Button w="full" bg="blue.700" color={"white"}>
+              <Button
+                rounded="full"
+                w="full"
+                size={"lg"}
+                p={5}
+                bg="#0244a5b3"
+                color={"white"}
+              >
                 LP LOCKED 365 DAYS
               </Button>
             </Link>

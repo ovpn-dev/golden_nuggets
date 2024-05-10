@@ -10,6 +10,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import mainNugs from "../assets/mainNuggets.png";
+import bbrett from "../assets/1715323925464.gif";
 
 export default function NewHero() {
   return (
@@ -24,7 +25,7 @@ export default function NewHero() {
         justify={"center"}
       >
         <Flex m={10} flexDir={{ base: "column", md: "row" }}>
-          <Image src={mainNugs} w="100%" />
+          <Image src={bbrett} w="100%" />
           <Box
             display="flex"
             flexDirection="column"
@@ -44,7 +45,11 @@ export default function NewHero() {
             <Text
               fontFamily="monospace"
               fontSize={{ base: "5xl", lg: "9xl" }}
-              bgGradient="linear(to-r, blue.500, transparent)"
+              p={1}
+              bg="#90cdf4"
+              fontWeight="bold"
+              textShadow="-2px -2px 0 #90cdf4, 2px -2px 0 #90cdf4, -2px 2px 0 #90cdf4, 2px 2px 0 #90cdf4,"
+              bgGradient="linear(to-l, blue.500, transparent)"
               textStroke="white"
               pointerEvents="none"
               opacity={1}

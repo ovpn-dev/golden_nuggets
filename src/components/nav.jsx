@@ -52,7 +52,6 @@ export default function Navbar() {
             textStroke="sm"
             pointerEvents="none"
             userSelect="none"
-            className="text-primary"
           >
             {" "}
             BRETT
