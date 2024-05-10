@@ -10,6 +10,7 @@ import Tokenomics from "./components/tokenomics";
 import Utilities from "./components/utils";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
+import BrettSection from "./components/howTo";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -24,12 +25,14 @@ function App() {
         justifyContent={"center"}
         width="full"
         height="full"
+        zIndex={0}
       >
         <MyNav />
         <NewHero />
         <NuggetsCard />
         <ProductIntro />
         <Tokenomics />
+        <BrettSection />
         <Utilities />
         <Contact />
         <Footer />

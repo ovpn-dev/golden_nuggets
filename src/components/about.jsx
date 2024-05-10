@@ -17,6 +17,8 @@ import {
 import nugget from "../assets/mainNuggets.png";
 import bbrett from "../assets/1715323925464.gif";
 import { FaTwitter, FaTelegram } from "react-icons/fa";
+import AboutVideo from "./aboutVid";
+import abrett from "../assets/aboutBrett.svg";
 
 export default function ProductIntro() {
   return (
@@ -53,7 +55,7 @@ export default function ProductIntro() {
           h="100%"
           maxW={{ base: "50%", md: "auto" }}
           objectFit="cover"
-          src={bbrett}
+          src={abrett}
           rounded="md"
         />
 
@@ -81,6 +83,15 @@ export default function ProductIntro() {
             He is a dancer and loves video games. Now he is living on the BASE
             blockchain as a Fan tribute. He has become blue mascot of the blue
             chain, BASE.
+          </Text>
+          <AboutVideo />
+          <Text
+            lineHeight="1.375"
+            fontWeight={700}
+            maxW={{ base: "100%", md: "auto" }}
+            fontSize="2xl"
+          >
+            Video Courtesy: Feels Good Man
           </Text>
         </Stack>
       </Stack>

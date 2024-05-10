@@ -43,14 +43,14 @@ export default function NewHero() {
               INTRODUCING
             </Text>
             <Text
-              fontFamily="monospace"
               fontSize={{ base: "5xl", lg: "9xl" }}
               p={1}
               bg="#90cdf4"
               fontWeight="bold"
-              textShadow="-2px -2px 0 #90cdf4, 2px -2px 0 #90cdf4, -2px 2px 0 #90cdf4, 2px 2px 0 #90cdf4,"
-              bgGradient="linear(to-l, blue.500, transparent)"
-              textStroke="white"
+              textShadow="5px 5px 5px rgba(144, 205, 244 , 0.5)" // Assuming this is the desired text stroke effect
+              bgGradient="linear(to-r, blue.500, transparent)"
+              textStyle={"stroke"}
+              textDecor="transparent"
               pointerEvents="none"
               opacity={1}
               transform="none"
