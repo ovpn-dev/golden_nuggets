@@ -11,13 +11,7 @@ import hbrett from "../assets/howBrett.svg";
 
 const BrettSection = () => {
   return (
-    <Box
-      bg="rgba(144, 205, 244 , 0.5)"
-      color="white"
-      position="relative"
-      w="full"
-      h="auto"
-    >
+    <Box bg="#0244a5b3" color="white" position="relative" w="full" h="auto">
       <Box position="absolute" zIndex={10} opacity={1} w="full" h="100vh" />
       <Flex
         maxW="6xl"
@@ -43,11 +37,7 @@ const BrettSection = () => {
             <Text letterSpacing="0.5rem">PEPE'S</Text>
             <Text letterSpacing="0.5rem">BESTFRIEND</Text>
           </Flex>
-          <Link
-            href="#"
-            _hover={{ scale: "1.1" }}
-            transition="all 0.3s ease-in-out"
-          >
+          <Link href="#">
             <Box
               bgGradient="linear(to-b, gray, black)"
               p={6}
@@ -55,9 +45,11 @@ const BrettSection = () => {
               border="1px solid"
               borderColor="rgba(204, 204, 204, 0.7)"
               opacity={1}
+              transition="all 0.3s ease-in-out"
+              _hover={{ transform: "scale(1.1)" }}
             >
               <Box
-                bgGradient="linear(to-tr, yellow.300, yellow.400)"
+                bgGradient="linear(to-tr, #0244a5b3, #0244a5b3)"
                 p={4}
                 rounded="full"
                 opacity={1}

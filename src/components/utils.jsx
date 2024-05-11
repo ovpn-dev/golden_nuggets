@@ -2,7 +2,7 @@ import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 const Utilities = () => {
   return (
-    <Box py={24} position="relative" color="white">
+    <Box py={24} position="relative" color="white" bg="#0244a5b3">
       <Box
         maxW="4xl"
         mx="auto"

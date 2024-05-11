@@ -2,7 +2,7 @@ import { Box, Text, Flex } from "@chakra-ui/react";
 
 const Footer = () => {
   return (
-    <Box position="relative" py={5}>
+    <Box position="relative" py={5} bg="#0244a5b3">
       <Box maxW="screen-xl" mx="auto" flexDir="column" gap={4}>
         <Flex alignItems="center" justifyContent="center" py={5}>
           <Text

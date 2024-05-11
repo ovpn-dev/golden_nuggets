@@ -3,7 +3,7 @@ import { FaTwitter, FaTelegram } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <Box bg="lyllw.400" py={24} zIndex={10} position="relative" id="contact">
+    <Box bg="#0244a5b3" py={24} zIndex={10} position="relative" id="contact">
       <Box maxW="screen-xl" mx="auto" px={4}>
         <Flex
           justifyContent="space-between"

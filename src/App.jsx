@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 import wp from "./assets/public.avif";
 import NuggetsCard from "./components/nuggetsCard";
 import ProductIntro from "./components/about";
-// import Milestones from "./components/buy";
 import NewHero from "./components/nwHero";
 import MyNav from "./components/nav";
 import Tokenomics from "./components/tokenomics";
@@ -17,26 +16,44 @@ function App() {
   return (
     <>
       <Box
-        background={`url(${wp})`}
-        backgroundSize="cover"
-        backgroundPosition="center"
-        backgroundRepeat="no-repeat"
+        backgroundImage={`url(${wp})`}
+        backgroundRepeat="repeat-y"
+        overflowX="hidden"
         alignContent={"center"}
         justifyContent={"center"}
-        width="full"
-        height="full"
         zIndex={0}
+        position="relative"
+        w="full"
+        h="full"
+        backgroundSize="contain"
       >
+        <Image
+          bgGradient="linear(to-b, #0244a5b3, transparent)"
+          // src="https://imagedelivery.net/cwNlIhFkSHgM59lNYMgaeA/b555872f-5310-41eb-1198-23c70f77a900/public"
+          backgroundSize="cover"
+          backgroundPosition="center"
+          backdropBlur={10}
+          placeholder="blur"
+          w="full"
+          h="full"
+          zIndex={0}
+          quality={100}
+          fit
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+          }}
+          position="absolute"
+        />
         <MyNav />
         <NewHero />
         <NuggetsCard />
         <ProductIntro />
         <Tokenomics />
-        <BrettSection />
+        {/* <BrettSection /> */}
         <Utilities />
         <Contact />
         <Footer />
-        {/* <Milestones /> */}
       </Box>
     </>
   );

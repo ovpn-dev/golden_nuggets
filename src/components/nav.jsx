@@ -34,7 +34,7 @@ export default function Navbar() {
   const handleToggle = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <Box bg={useColorModeValue("#fffff", "gray.900")} px={4}>
+    <Box bg={useColorModeValue("#fffff", "gray.900")} px={4} pos="relative">
       <Flex h={16} alignItems={"center"} justifyContent={"space-around"}>
         <IconButton
           size={"md"}

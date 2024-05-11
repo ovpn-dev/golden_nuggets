@@ -23,6 +23,7 @@ export default function NewHero() {
         rounded="2xl"
         align={"center"}
         justify={"center"}
+        position="relative"
       >
         <Flex m={10} flexDir={{ base: "column", md: "row" }}>
           <Image src={bbrett} w="100%" />
