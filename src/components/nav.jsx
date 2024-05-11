@@ -45,15 +45,19 @@ export default function Navbar() {
         />
         <Flex alignItems={"center"}>
           <Text
-            textAlign="center"
-            fontSize="4xl"
-            color="white"
+            fontSize={{ base: "3xl", lg: "4xl" }}
+            p={1}
+            bg="#90cdf4"
+            color={"white"}
             fontWeight="bold"
-            textStroke="sm"
+            textShadow="2px 2px 2px rgba(144, 205, 244 , 0.5)" // Assuming this is the desired text stroke effect
+            bgGradient="linear(to-r, #0244a5b3, transparent)"
+            textStyle={"stroke"}
+            textDecor="transparent"
             pointerEvents="none"
-            userSelect="none"
+            opacity={1}
+            transform="none"
           >
-            {" "}
             BRETT
           </Text>
         </Flex>
