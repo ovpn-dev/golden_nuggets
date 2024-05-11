@@ -2,7 +2,7 @@ import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 
 const Utilities = () => {
   return (
-    <Box py={24} position="relative" color="white" bg="#0244a5b3">
+    <Box py={24} position="relative" color="white">
       <Box
         maxW="4xl"
         mx="auto"
@@ -26,7 +26,7 @@ const Utilities = () => {
         </Heading>
         <Flex flexDir="column" gap={8} w="full">
           <Flex
-            bgGradient="linear(to-b, #0244a5b3, blue.400)"
+            bgGradient="linear(to-b, #0244a5b3, transparent)"
             flexDir={{ base: "column", lg: "row" }}
             gap={8}
             alignItems="center"
@@ -55,7 +55,7 @@ const Utilities = () => {
             </Flex>
           </Flex>
           <Flex
-            bgGradient="linear(to-b, #0244a5b3, blue.400)"
+            bgGradient="linear(to-b, #0244a5b3, transparent)"
             flexDir={{ base: "column", lg: "row" }}
             gap={8}
             alignItems="center"
@@ -88,7 +88,7 @@ const Utilities = () => {
             </Flex>
           </Flex>
           <Flex
-            bgGradient="linear(to-b, #0244a5b3, blue.400)"
+            bgGradient="linear(to-b, #0244a5b3, transparent)"
             flexDir={{ base: "column", lg: "row" }}
             gap={8}
             alignItems="center"

@@ -28,7 +28,7 @@ function App() {
         backgroundSize="contain"
       >
         <Image
-          bgGradient="linear(to-b, #0244a5b3, transparent)"
+          bg={"#0244a5b3"}
           // src="https://imagedelivery.net/cwNlIhFkSHgM59lNYMgaeA/b555872f-5310-41eb-1198-23c70f77a900/public"
           backgroundSize="cover"
           backgroundPosition="center"

@@ -41,7 +41,7 @@ import MexcFut from "../assets/mexcFutures.png";
 export default function NuggetsCard() {
   return (
     <>
-      <Box bgGradient="linear(to-t, #0244a5b3, transparent)">
+      <Box>
         {" "}
         <Stack // backgroundImage={`url(${ScSh130})`}
           bgGradient="linear(to-b, #0244a5b3, transparent)"
@@ -52,7 +52,7 @@ export default function NuggetsCard() {
           align={"center"}
           justifyContent="center"
           border="1px"
-          borderColor="#0244a5b3.700"
+          borderColor="#0244a5b3"
           rounded={"lg"}
           color={"white"}
           position="relative"

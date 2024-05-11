@@ -26,7 +26,16 @@ export default function NewHero() {
         position="relative"
       >
         <Flex m={10} flexDir={{ base: "column", md: "row" }}>
-          <Image src={bbrett} w="100%" />
+          <Image
+            src={bbrett}
+            w="100%"
+            h="100%"
+            quality={100}
+            sizes="100vw"
+            style={{
+              objectFit: "cover",
+            }}
+          />
           <Box
             display="flex"
             flexDirection="column"

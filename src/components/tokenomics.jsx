@@ -11,19 +11,12 @@ import {
 
 const Tokenomics = () => {
   return (
-    <Box
-      id="tokenomics"
-      py={10}
-      zIndex={10}
-      bgGradient="linear(to-t, #0244a5b3, transparent)"
-      position="relative"
-    >
+    <Box id="tokenomics" py={10} zIndex={10} position="relative">
       <Box maxW={"7xl"} mx="auto" px={5}>
         <Stack
-          bg="#0244a5b3"
-          bgGradient="linear(to-t, yllw.500, lyllw.500)"
+          bgGradient="linear(to-b, #0244a5b3, transparent)"
           border="1px"
-          borderColor="#0244a5b3.700"
+          borderColor="#0244a5b3"
           backdropFilter="blur(10px)"
           gap={8}
           w="auto"

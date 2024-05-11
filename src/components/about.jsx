@@ -22,7 +22,7 @@ import abrett from "../assets/aboutBrett.svg";
 
 export default function ProductIntro() {
   return (
-    <Box bgGradient="linear(to-b, #0244a5b3, transparent)">
+    <Box>
       {" "}
       <Stack
         p={{ base: 5, md: 5 }}
@@ -36,19 +36,25 @@ export default function ProductIntro() {
         fontFamily="Londrina Solid"
         pos="relative"
       >
-        <Flex color="white" fontWeight={800} align="center" justify="left">
+        <Flex
+          w="100%"
+          color="white"
+          fontWeight={800}
+          align="center"
+          justify="space-between"
+        >
           <Heading fontSize={"5xl"}>BRETT</Heading>
-          <Divider />
+          <Divider color={"#0244a5b3"} />
           <Text letterSpacing={5}>THE PEPE'S BESTFRIEND</Text>
         </Flex>
         <Stack
           direction={{ base: "column", md: "row" }}
           px={{ base: 6, md: 3 }}
           py={10}
-          bg="#0244a5b3"
+          bgGradient="linear(to-b, #0244a5b3, transparent)"
           rounded="2xl"
           border="1px"
-          borderColor="#0244a5b3.700"
+          borderColor="#0244a5b3"
           backdropFilter="blur(10px)"
           align={"center"}
           justify="center"
@@ -67,6 +73,8 @@ export default function ProductIntro() {
             direction="column"
             spacing={6}
             color="white"
+            p={10}
+            justify="center"
           >
             <Heading
               as="h2"
